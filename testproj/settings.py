@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-kcemu)0f9u3^qp@g)h%_(pb%**3ufp=b&s0#bei5_%0rob@5^v'
-
+#SECRET_KEY = 'django-insecure-kcemu)0f9u3^qp@g)h%_(pb%**3ufp=b&s0#bei5_%0rob@5^v'
+SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['thevaxxwizph.pythonanywhere.com']
 
 
 # Application definition
@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'testproj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'thevaxxwizph$default',
+        'USER': 'thevaxxwizph',
+        'PASSWORD': 'ceciliadatabase',
+        'HOST': 'thevaxxwizph.mysql.pythonanywhere-services.com',
     }
 }
 

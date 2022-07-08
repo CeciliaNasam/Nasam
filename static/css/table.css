@@ -1,0 +1,85 @@
+.ibody{
+	background-image: url(/static/img/vax.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-attachment: fixed;
+	grid-template-areas:
+	'navi navi navi navi navi navi'
+	'ibox ibox ibox ibox ibox ibox';
+}
+@font-face{
+	font-family:'montserrat';
+	src: url('/static/font/Montserrat-Medium.otf');
+}
+@font-face{
+	font-family:'fjalla';
+	src: url('/static/font/FjallaOne-Regular.ttf');
+}
+@font-face{
+	font-family:'montserratbold';
+	src: url('/static/font/Montserrat-Bold.otf');
+}
+@font-face{
+	font-family:'arvo';
+	src: url('/static/font/Arvo-Regular.ttf');
+}
+.button{
+	font-family: fjalla;
+	color: #000000;
+	border-radius: 10px;
+}
+.upcont{
+	grid-area: navi ;
+	background-color: #ffffff;
+	padding:0px ;
+}
+.item1 { 
+	width: 350px;
+	alt: "The Health Wiz Logo";
+}
+.item2 { 
+	float: right;
+	display: inline-block;
+	padding-top: 50px;
+	padding-right: 20px;
+	font-family: montserrat; 
+	color: #000000;
+	text-decoration: none; 
+}
+.iitem3 {
+	grid-area: ibox;
+	float: right;
+	padding: 60px;
+	padding-right: 20px;
+	padding-bottom:100px;
+	width: auto;
+	height: 200px;
+	font-family: fjalla;
+	font-size: 20px;
+	color: white;
+	text-indent: 50px;
+	text-align: justify;
+}
+.leftarrow{
+	float: left;
+	padding-right: 10px;
+	margin-left: 0px;
+	width: 20px;
+}
+.item3t { 
+	grid-area: box1;
+	float: center;
+	display: inline-block;
+	width: auto;
+	text-align: left; 
+	height: 1000px;
+}
+.item3_2f{
+	font-family: fjalla;
+	color: #ffffff;
+	text-align: center;
+	background-color: #008081;
+	border-radius: 6px;
+	margin-right: 20px;
+}

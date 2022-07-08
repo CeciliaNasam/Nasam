@@ -1,0 +1,133 @@
+.vaxbody2{
+	background-image: url(/static/img/bg2.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	grid-template-areas:
+	'logo logo navi navi navi navi'
+	'cont cont cont cont cont cont';
+}
+@font-face{
+	font-family:'montserrat';
+	src: url('/static/font/Montserrat-Medium.otf');
+}
+@font-face{
+	font-family:'fjalla';
+	src: url('/static/font/FjallaOne-Regular.ttf');
+}
+@font-face{
+	font-family:'montserratbold';
+	src: url('/static/font/Montserrat-Bold.otf');
+}
+@font-face{
+	font-family:'arvo';
+	src: url('/static/font/Arvo-Regular.ttf');
+}
+			.upcont{
+				grid-area: navi ;
+				background-color: #ffffff;
+				padding:0px ;
+			}
+			.item1 { 
+				width: 350px;
+				alt: "The Health Wiz Logo";
+			}
+			.item2 { 
+				float: right;
+				display: inline-block;
+				padding-top: 50px;
+				padding-right: 20px;
+				font-family: montserrat; 
+				color: #000000;
+				text-decoration: none; 
+			}
+			.item3 { 
+				grid-area: cont;
+				float: left;
+				padding: 40px;
+				padding-top: 0px;
+				margin-left: 20px;
+				width: auto;
+				height: auto;
+				text-align: left;
+				background-color: rgba(127,163,176, 0.7);	
+			}
+			.item2:hover{
+				color: gray;
+			}
+			.titletext{
+				font-family: montserratbold;
+				font-size: 35px;
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			.firstbox{
+				float: left;
+				width: 490px;
+				font-family: arvo;
+				font-size:12px;
+				color: #000000;
+				text-align: justify;
+			}
+			.secondbox{
+				width: 500px;
+				height: 80px;
+				text-align: right;
+				text-indent: 0px;	
+			}
+			.boxtext{
+				font-family: montserrat;
+				font-size: 12px;
+				text-decoration: none;
+				color: #FFFFFF;
+				text-align: center;
+				border-style: solid;
+				padding: 2px;
+				margin-right: 10px;
+			}
+			.title{
+				font-family: montserrat;
+				font-size: 15px;
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			.leftarrow{
+				float: left;
+				padding-right: 10px;
+				width: 30px;
+			}
+			.morearrow{
+				height: 20px;
+			}
+
+
+
+/*second batch*/
+			
+			.covbody{
+				background-image: url('webp/6.webp');
+	            background-size: cover;
+	            background-repeat: no-repeat;
+				overflow: hidden;grid-template-areas:
+	    		'logo logo navi navi navi navi'
+	    		'cont cont cont cont cont cont';
+	    	}
+	    	.corbody{
+				background-image: url('webp/7.webp');
+	            background-size: cover;
+	            background-repeat: no-repeat;
+				overflow: hidden;
+				grid-template-areas:
+	    		'logo logo navi navi navi navi'
+	    		'cont cont cont cont cont cont';
+			}
+			.asbody{
+				background-image: url('webp/5.webp');
+	            background-size: cover;
+	            background-repeat: no-repeat;
+				overflow: hidden;
+	 		 	grid-template-areas:
+	    		'logo logo navi navi navi navi'
+	    		'cont cont cont cont cont cont';
+			}
+{% endblock %}

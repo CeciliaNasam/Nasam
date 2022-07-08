@@ -1,0 +1,517 @@
+
+.ibody{
+	background-image: url(/static/img/home.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-attachment: fixed;
+	grid-template-areas:
+	'navi navi navi navi navi navi'
+	'ibox ibox ibox ibox ibox ibox';
+}
+@font-face{
+	font-family:'montserrat';
+	src: url('/static/font/Montserrat-Medium.otf');
+}
+@font-face{
+	font-family:'fjalla';
+	src: url('/static/font/FjallaOne-Regular.ttf');
+}
+@font-face{
+	font-family:'montserratbold';
+	src: url('/static/font/Montserrat-Bold.otf');
+}
+@font-face{
+	font-family:'arvo';
+	src: url('/static/font/Arvo-Regular.ttf');
+}
+.s1imgdiv{
+	vertical-align: center;
+	padding-left: 230px;
+	padding-right: 20px;
+	margin-top: 80px; 
+	display: flex; 
+	align-items: center;
+	background-color: rgba(255, 242, 255, 0.7);
+	height: 250px;
+}
+.imgformat{
+	height: 200px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+.imgformat:hover{
+	transform: scale(1.1); 
+}
+.s1rightarrow{
+	float: right;
+	padding-left: 20px;
+	width: 50px;
+	height: 50px;
+}
+	
+
+.item4a { 
+	grid-area: dd;
+	margin-right: 20px;
+	margin-top: 30px;
+	background-color: rgba(255, 242, 255, 0.7);
+	border-radius: 6px;
+}
+
+.iitem3 {
+	grid-area: ibox;
+	float: right;
+	padding: 60px;
+	padding-right: 20px;
+	padding-bottom:100px;
+	width: 600px;
+	height: 200px;
+	font-family: fjalla;
+	font-size: 20px;
+	color: white;
+	text-indent: 50px;
+	text-align: justify;
+}
+
+.isecondbox{
+	padding-top: 30px;
+	width: 650px;
+	height: 80px;
+	text-align: left;
+	text-indent: 0px;
+}
+.iboxtext{
+	font-family: montserrat;
+	font-size: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+	padding: 2px;
+	margin-right: 10px;
+}
+.upcont{
+	grid-area: navi ;
+	background-color: #ffffff;
+	padding:0px ;
+}
+.item1 { 
+	width: 350px;
+	alt: "The Health Wiz Logo";
+}
+.item2 { 
+	float: right;
+	display: inline-block;
+	padding-top: 50px;
+	padding-right: 20px;
+	font-family: montserrat; 
+	color: #000000;
+	text-decoration: none; 
+}
+.item3f { 
+	grid-area: box1;
+	float: center;
+	display: inline-block;
+	width: 900px;
+	text-align: left; 
+	padding-left: 220px;
+}
+.item3t { 
+	grid-area: box1;
+	float: center;
+	display: inline-block;
+	width: auto;
+	text-align: left; 
+	height: 1000px;
+}
+.item3_2f{
+	font-family: fjalla;
+	color: #ffffff;
+	text-align: center;
+	background-color: #008081;
+	border-radius: 6px;
+	margin-right: 20px;
+}
+.item3_22f{
+	font-family: fjalla;
+	color: #000000;
+	width: 100px;
+}
+.item4 { 
+	grid-area: dd;
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+	width: 500px;
+	background-color: rgba(255, 242, 255, 0.7);
+	border-radius: 6px;
+}
+.item3 { 
+	grid-area: cont;
+	float: right;
+	padding: 40px;
+	padding-top: 0px;
+	margin-left: 20px;
+	width: auto;
+	height: auto;
+	text-align: left;
+	background-color: rgba(127,163,176, 0.7);	
+}
+.s2imgdiv{
+	vertical-align: center;
+	padding-left: 170px;
+	padding-right: 20px;
+	margin-top: 80px; 
+	display: flex; 
+	align-items: center;
+	background-color: rgba(255, 242, 255, 0.7);
+	height: 250px;
+}
+.s2leftarrow{
+	float: left;
+	padding-right: 20px;
+	width: 50px;
+	height: 50px;
+}	
+.s2imgtext{
+	margin-right: 140px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.s2imgtext1{
+	margin-right: 160px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.s2imgtext2{
+	margin-right: 140px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.s1imgtext{
+	margin-right: 190px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.s1imgtext1{
+	margin-right: 150px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.s1imgtext2{
+	margin-right: 150px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.captiondiv{
+	vertical-align: center;
+	padding-left: 300px;
+	padding-top: 5px; 
+	display: flex; 
+	align-items: center;
+	background-color: rgba(255, 242, 255, 0.7);
+}
+.item2:hover{
+	color: gray;
+}
+
+.titletext{
+	font-family: montserratbold;
+	font-size: 35px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.firstbox{
+	float: right;
+	padding-right: 0px;
+	padding-bottom:100px;
+	width: 490px;
+	height: 200px;
+	font-family: arvo;
+	font-size:12px;
+	color: #000000;
+	text-align: justify;
+}
+.secondbox{
+	width: 500px;
+	height: 80px;
+	text-align: right;
+	text-indent: 0px;	
+}
+.boxtext{
+	font-family: montserrat;
+	font-size: 12px;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+	padding: 2px;
+	margin-right: 10px;
+}
+.title{
+	font-family: montserrat;
+	font-size: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.leftarrow{
+	float: left;
+	padding-right: 10px;
+	margin-left: 0px;
+	width: 30px;
+}
+.morearrow{
+	height: 20px;
+}
+
+.messagebox{
+	width: 400px;
+	height: 150px;
+	text-align: justify;
+	text-indent: 5px;	
+}
+.formtext{
+	font-family: montserrat;
+	font-size: 25px;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: center;
+}
+.formtext2{
+	font-family: montserrat;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000000;
+	text-align: center;
+	margin-right: 20px;
+}
+.question{
+	font-family: montserrat;
+	color: #444;
+    cursor: pointer;
+    padding: 20px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+.answer{
+	font-family: fjalla;
+	text-align: justify;
+	font-size: 12px;
+	margin: auto;
+	width: 60%; 
+	padding: auto;
+	padding: 0 18px;
+	background-color: none;
+    display: none;
+    overflow: hidden;
+}
+.answer1{
+	text-align: justify;
+	font-size: 12px;
+	text-decoration: none;
+	color: #000000;
+}
+.active,
+.question:hover {
+	background-color: #F9F9F9;
+}
+.question:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+}
+.button{
+	font-family: fjalla;
+	color: #000000;
+	border-radius: 10px;
+}
+.fakebutton{
+	font-family: fjalla;
+	text-decoration: none;
+	color: #000000;
+	border-radius: 10px;
+	border-color: gray;
+	background-color: white;
+}
+.hr-line{
+	width: 60%;
+	margin: auto;
+}
+.ficon{
+	height: 20px;
+	margin-right: 5px;
+}
+/*locator*/
+
+.lobody{
+	background-image: url('webp/home.webp');
+	background-size: cover;
+    background-repeat: no-repeat;
+	overflow: hidden;
+	grid-template-areas:
+	'navi navi navi navi navi navi'
+	'box2 box2 box2 box1 box1 box1'
+	'box3 box3 box3 box3 box3 box3';
+}
+.loitem3 {
+	grid-area: box1;
+	float: right;
+	margin-right: 10px;
+	padding-bottom:100px;
+	width: 600px;
+	height: auto;
+	font-family: fjalla;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: left;
+}			
+.loimagedisplay {
+	grid-area: box2;
+	float: left;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 530px;
+	height: auto;
+	font-size: 20px;
+	background-color: rgba(255, 242, 255, 0.7);
+	display: none;
+	justify-content: center;
+	text-align: center;
+	border-radius: 6px;
+}
+.loimages{
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+	border-radius: 6px;
+}
+.loimages:hover{
+	transform: scale(1.1);
+}
+.loimtext {
+	color: #000000;
+	font-size: 11px;
+	position: relative;
+	font-family: montserrat;
+}
+.losecondbox{
+	padding-top: 30px;
+	width: 650px;
+	height: 80px;
+	text-align: center;
+	text-indent: 0px;
+}
+.loboxtext{
+	font-family: montserrat;
+	font-size: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+	padding: 2px;
+}
+.lolocatorcontainer{
+	text-align: center;
+	border-radius: 6px;
+}
+.lolocatortitle{
+	font-family: montserrat;
+	font-size: 20px;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: center;
+}
+.lolocatortitle1{
+	font-family: montserrat;
+	font-size: 20px;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: left;
+}
+.lolocatortext{
+	font-family: fjalla;
+	font-size: 12px;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: center;
+}
+.lolocatorinput{
+	font-family: fjalla;
+	color: #000000;
+	width: 150px;
+	margin-left: 5px;
+	margin-right: 10px;
+	text-align: left;
+}
+.button{
+	font-family: fjalla;
+	color: #000000;
+	border-radius: 10px;
+}
+.lotooltip {
+	position: relative;
+	display: inline-block;
+	font-family: montserrat;
+	font-size: 10px;
+}
+.lotooltip .tooltiptext {
+	visibility: hidden;
+	width: 180px;
+	background-color: grey;
+	color: #000000;
+	font-size: 12px;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+}
+.lotooltip:hover .tooltiptext {
+	visibility: visible;
+}
+.lonmbox{
+	width: 150px;
+	background-color: #2b6878;
+	border-style: none;
+	color: #ffffff;
+	text-align: center;
+	font-family: montserrat;
+}
+.lothirdbox{
+	grid-area: box3;
+	float: left;
+	margin-top: 20px;
+	margin-left: 18px;
+	padding: 10px;
+	width: 530px;
+	height: auto;
+	font-size: 12px;
+	font-family: montserrat;
+	color: #ffffff;
+	background-color: #2b6878;
+	display: none;
+	justify-content: center;
+	text-align: center;
+	border-radius: 6px;
+}
+{% endblock %}
