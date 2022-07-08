@@ -1,0 +1,23 @@
+{%extends 'vaxx.html' %}
+{%load static%}
+{%block content%}
+<div class="item3">
+	<p class="titletext"><a href="{% url 'vaccine_list1' %}"><img class="leftarrow" src="{% static 'img/arrowleft.webp' %}" alt="back"/></a>Pfizer</p>
+
+	<div class="firstbox">
+		<b class="title">How efficacious is the vaccine?</b>
+		<p> The Pfizer BioNTech vaccine against COVID-19 has an efficacy of 95% against symptomatic SARS-CoV-2 infection.</p>
+		<b class="title">What is the recommended dosage?</b>
+		<p> A protective effect starts to develop 12 days after the first dose, but full protection requires two doses which WHO recommends be administered with a 21 to 28-day interval.</p>
+		<hr>
+		<p>Pfizer-BioNTech COVID-19 mRNA vaccine is safe and effective. It is safe and effective in people with various conditions that are associated with increased risk of severe disease such as; hypertension, diabetes, asthma, pulmonary, liver or kidney disease, as well as chronic infections that are stable and controlled.</p>
+		
+		<div class="secondbox">
+			
+			<a class="boxtext" href="{% url 'reach_us' %}"> Questions? Reach us out! </a>
+			<a class="boxtext" href="{% url 'frequently_asked_questions' %}"> Check out our FAQs! </a>
+			<a class="boxtext" href="{% url 'registedperson' %}"> Vaccine Registration </a>
+		</div>
+	</div>
+</div>
+{%endblock%}

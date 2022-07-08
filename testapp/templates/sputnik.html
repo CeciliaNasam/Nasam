@@ -1,0 +1,23 @@
+{%extends 'vaxx.html' %}
+{%load static%}
+{%block content%}
+<div class="item3">
+	<p class="titletext"><a href="{% url 'vaccine_list1' %}"><img class="leftarrow" src="{% static 'img/arrowleft.webp' %}" alt="back"/></a>Sputnik</p>
+
+	<div class="firstbox">
+		<b class="title">How efficacious is the vaccine?</b>
+		<p>Vaccine efficacy based on the numbers of confirmed COVID-19 cases from 21 days after the first dose of vaccine, is reported as 91·6% (95% CI 85·6–95·2)</p>
+		<b class="title">What is the recommended dosage?</b>
+		<p> Vaccine experts recommended a maximum dose interval of 42 days. It was annnounced on September 4, 2021, that the Sputnik V has a booster shot for those 18 and above who received their 2nd dose of the Sputnik V vaccine at least 6 months ago. </p>
+
+		<hr>
+		<p>The Sputnik V is currently authorized for use in 68 countries. It was developed by Gamaleya National Center of Epidemiology and Microbiology in Moscow, Russia. It is a viral vector vaccine that produce immunity against COVID-19. A viral vector is a harmless virus that can deliver a gene to our cells that they turn into a protein.</p>
+
+		<div class="secondbox">
+			<a class="boxtext" href="{% url 'reach_us' %}"> Questions? Reach us out! </a>
+			<a class="boxtext" href="{% url 'frequently_asked_questions' %}"> Check out our FAQs! </a>
+			<a class="boxtext" href="{% url 'registedperson' %}"> Vaccine Registration </a>
+		</div>
+	</div>
+</div>
+{%endblock%}

@@ -1,0 +1,139 @@
+.sbody{
+	background-image: url(/static/img/vax.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	grid-template-areas:
+	'navi navi navi navi navi navi';
+}
+
+@font-face{
+	font-family:'montserrat';
+	src: url('/static/font/Montserrat-Medium.otf');
+}
+@font-face{
+	font-family:'fjalla';
+	src: url('/static/font/FjallaOne-Regular.ttf');
+}
+@font-face{
+	font-family:'montserratbold';
+	src: url('/static/font/Montserrat-Bold.otf');
+}
+@font-face{
+	font-family:'arvo';
+	src: url('/static/font/Arvo-Regular.ttf');
+}
+.upcont{
+	grid-area: navi ;
+	background-color: #ffffff;
+	padding:0px ;
+}
+.item1 { 
+	width: 350px;
+	alt: "The Health Wiz Logo";
+}
+.item2 { 
+	float: right;
+	display: inline-block;
+	padding-top: 50px;
+	padding-right: 20px;
+	font-family: montserrat; 
+	color: #000000;
+	text-decoration: none; 
+}		
+.item2:hover, .margin:hover{
+	color: gray;
+}
+.imgformat{
+	height: 200px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+.imgformat:hover{
+	transform: scale(1.1); 
+}
+.captiondiv{
+	vertical-align: center;
+	padding-left: 300px;
+	padding-top: 5px; 
+	display: flex; 
+	align-items: center;
+	background-color: rgba(255, 242, 255, 0.7);
+}
+.s1imgdiv{
+	vertical-align: center;
+	padding-left: 230px;
+	padding-right: 20px;
+	margin-top: 80px; 
+	display: flex; 
+	align-items: center;
+	background-color: rgba(255, 242, 255, 0.7);
+	height: 250px;
+}
+.s1rightarrow{
+	float: right;
+	padding-left: 20px;
+	width: 50px;
+	height: 50px;
+}
+.s1imgtext{
+	margin-right: 190px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.s1imgtext1{
+	margin-right: 150px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.s1imgtext2{
+	margin-right: 150px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.captiondiv{
+	vertical-align: center;
+	padding-left: 300px;
+	padding-top: 5px; 
+	display: flex; 
+	align-items: center;
+	background-color: rgba(255, 242, 255, 0.7);
+}
+.s2imgdiv{
+	vertical-align: center;
+	padding-left: 170px;
+	padding-right: 20px;
+	margin-top: 80px; 
+	display: flex; 
+	align-items: center;
+	background-color: rgba(255, 242, 255, 0.7);
+	height: 250px;
+}
+.s2leftarrow{
+	float: left;
+	padding-right: 20px;
+	width: 50px;
+	height: 50px;
+}	
+.s2imgtext{
+	margin-right: 140px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.s2imgtext1{
+	margin-right: 160px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}
+.s2imgtext2{
+	margin-right: 140px;
+	color: #000000;
+	font-size: 22px;
+	font-family: fjalla;
+}

@@ -1,0 +1,23 @@
+{%extends 'vaxx2.html' %}
+{%load static%}
+{%block content%}
+		<div class="item3">
+			<p class="titletext"><a href="{% url 'vaccine_list2' %}"><img class="leftarrow" src="{% static 'img/arrowleft.webp' %}" alt="back"/></a>Sinopharm</p>
+			
+			<div class="firstbox">
+
+				<b class="title">How efficacious is the vaccine?</b>
+				<p> Trial has shown that 2 doses with an interval of 21 days, have an efficacy of 79%. Vaccine efficacy against hospitalization is 79%.</p>
+				<b class="title">What is the recommended dosage?</b>
+				<p> BIBP vaccine has 2 doses (0.5 ml) given intramuscularly. WHO recommends an interval of 3–4 weeks between the first and second dose. If administration of the second dose is delayed beyond 4 weeks, it should be given at the earliest possible opportunity.</p>
+				<hr>
+				<p>Vaccine effectiveness is expected to be similar in lactating women as in other adults. WHO recommends the use of the COVID-19 vaccine BIBP in lactating women as in other adults. WHO does not recommend discontinuing breastfeeding after vaccination.</p>
+
+			<div class="secondbox">
+				<a class="boxtext" href="{% url 'reach_us' %}"> Questions? Reach us out! </a>
+				<a class="boxtext" href="{% url 'frequently_asked_questions' %}"> Check out our FAQs! </a>
+				<a class="boxtext" href="{% url 'registedperson' %}"> Vaccine Registration </a>
+			</div>
+			</div>
+		</div>
+{%endblock%}

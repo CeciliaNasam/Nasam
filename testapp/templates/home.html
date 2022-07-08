@@ -1,0 +1,16 @@
+{%extends 'navg.html' %}
+{%load static%}
+
+{%block content%}
+
+<div class="iitem3">
+	<p>Every day, we encounter so much information about COVID-19, and COVID-19 vaccines. Unfortunately, sometimes this information is conflicting or simply false. Here in The Vaxx Wiz we help you sort through the headlines and find high-quality, accurate information from trusted sources.</p>
+	<p>Find out which COVID-19 vaccines have been approved and where COVID-19 vaccine clinical trials are taking place to stay up to date.</p>
+	<hr>
+	<div class="isecondbox">
+		<a class="iboxtext" href="reach"> Questions? Reach us out! </a>
+		<a class="iboxtext" href="faq"> Check out our FAQs! </a>
+		<a class="iboxtext" href="{% url 'registedperson' %}"> Vaccine Registration </a>
+	</div>
+</div>
+{%endblock%}

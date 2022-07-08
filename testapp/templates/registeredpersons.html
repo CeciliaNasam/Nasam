@@ -1,0 +1,90 @@
+{%extends 'navg.html' %}
+{%load static%}
+{%block content%}
+<form >
+<style type="text/css">
+	table, td {
+		text-align: Center;
+	    border: 1px solid;
+	    color: black;
+	    padding: 5px;
+	    font-family: montserrat; 
+	    font-size: 10px;
+	    background-color: rgba(255, 242, 255, 0.7);
+	    border-radius: 5px;
+	}
+	th{
+		text-align: Center;
+	    border: 1px solid;
+	    color: black;
+	    padding: 5px;
+	    font-family: montserrat; 
+	    font-size: 11px;
+	    background-color: white;
+	    border-radius: 5px;
+	}
+	tr:nth-child(even) {background-color: #b0b0b0;}
+</style>
+
+<div class="item3t">
+	<a href="{% url 'home' %}"><img class="leftarrow" style="height: 20px; width: 20px" src="{% static 'img/arrowleft.webp' %}" alt="back"/>
+	<button class="button"><a href="{% url 'personal_info_form' %}">Register</a></button>
+	
+	<div class="item3_2f" style="width: 1350px;">
+		<fieldset style="border-radius: 6px;">
+			<legend class="item3_2f">Registered Persons:</legend>
+			<table id="table" style="width: 1320px;">
+				<tr>
+					<th>No.</th>
+					<th>Surname</th> 
+					<th>First Name</th>
+					<th>Middle Name</th>
+					<th>Date of Birth</th>
+					<th>Gender</th>
+					<th>Category</th>  
+					<th>Phone Number</th>
+					<th>Email</th>
+					<th>Sequence</th>
+					<th>Last Innoculation</th>
+					<th>1st Dose</th>  
+					<th>2nd Dose</th>
+					<th>3rd Dose</th>
+					<th>Facility Name</th>  
+					<th>Facility Address</th>
+					<th>Facility Type</th>
+					<th>Vaccinator Name</th>  
+					<th>Vaccinator Address</th>
+					<th>Vaccinator Type</th>
+					<th>Actions</th>
+				</tr>
+				{% for item in regpersons%}
+				<tr>
+					<td>{{forloop.counter}}</td> 
+					<td>{{item.person_info.surname.upper}}</td> 
+					<td>{{item.person_info.firstname.upper}}</td>
+					<td>{{item.person_info.middlename.upper}}</td>
+					<td>{{item.person_info.dob}}</td>
+					<td>{{item.person_info.gender}}</td>
+					<td>{{item.person_info.vcat}}</td> 
+					<td>{{item.person_info.email}}</td> 
+					<td>{{item.person_info.phone}}</td>
+					<td>{{item.vaccine.dsequence}}</td>
+					<td>{{item.vaccine.dolv}}</td>
+					<td>{{item.vaccine.brand1}}</td> 
+					<td>{{item.vaccine.brand2}}</td> 
+					<td>{{item.vaccine.brand3}}</td>
+					<td>{{item.facility.fname}}</td> 
+					<td>{{item.facility.fadd}}</td> 
+					<td>{{item.facility.ftype}}</td>
+					<td>{{item.wname}}</td> 
+					<td>{{item.wnum}}</td> 
+					<td>{{item.wtype}}</td>
+					<td><button class="button"><a href="Edit">Edit</a></button>
+						<hr>
+						<button class="button"><a href="/delete/{{item.id}}">Remove</a></button></td>
+				</tr>
+				{% endfor %}
+			</table>
+		</fieldset>		
+</form>
+{%endblock%}

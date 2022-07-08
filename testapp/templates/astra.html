@@ -1,0 +1,22 @@
+{%extends 'vaxx2.html' %}
+{%load static%}
+{%block content%}
+		<div class="item3">
+			<p class="titletext"><a href="{% url 'vaccine_list2' %}"><img class="leftarrow" src="{% static 'img/arrowleft.webp' %}" alt="back"/></a>AstraZeneca</p>
+			
+			<div class="firstbox">
+				<b class="title">How efficacious is the vaccine?</b>
+				<p> The AZD1222 vaccine against COVID-19 has an efficacy of 63.09% against symptomatic SARS-CoV-2 infection.</p>
+				<b class="title">What is the recommended dosage?</b>
+				<p> Two dosage are recommended. Longer dose intervals within the 8 to 12 weeks range are associated with greater vaccine efficacy.</p>
+				<hr>
+				<p>As of 19 April 2021, the AstraZeneca vaccine is safe and effective at protecting people from the extremely serious risks of COVID-19, including death, hospitalization and severe disease. The World Health Organization's Global Advisory Committee on Vaccine Safety reports of very rare side effects. </p>
+			
+			<div class="secondbox">
+				<a class="boxtext" href="{% url 'reach_us' %}"> Questions? Reach us out! </a>
+				<a class="boxtext" href="{% url 'frequently_asked_questions' %}"> Check out our FAQs! </a>
+				<a class="boxtext" href="{% url 'registedperson' %}"> Vaccine Registration </a>
+			</div>
+			</div>
+		</div>
+{%endblock%}

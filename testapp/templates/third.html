@@ -1,0 +1,25 @@
+{%extends 'abouttemplate.html' %}
+{%load static%}
+{%block content%}
+
+<div class="item3">
+	<p>
+		Hi! welcome to my website. I'm Ma. Cecilia I. Nasam or "Sam" your web developer. The Vaxx Wiz site is created to help people stay informed and aware of the latest vaccine information. We also aim to help promote vaccination by linking you to the nearest vaccination site to your location.
+	</p>
+	<p>
+		This website is currently in continuous editing process. Stay tuned for more topic and discussions that we will share. We hope we can help you. Enjoy!
+	</p>
+
+	<div class="secondbox">
+		<a class="boxtext" href="reach"> Questions? Reach us out! </a>
+		<a class="boxtext" href="faq"> Check out our FAQs! </a>
+		<a class="boxtext" href="{% url 'registedperson' %}"> Vaccine Registration  </a>
+	</div>
+	</div>
+	<div class="item4">
+		<iframe
+		width="560"
+		height="315"
+		src="https://www.youtube.com/embed/6QdHD4J18vk?autoplay=1&mute=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+{%endblock%}

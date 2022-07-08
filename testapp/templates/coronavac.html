@@ -1,0 +1,23 @@
+{%extends 'vaxx2.html' %}
+{%load static%}
+{%block content%}
+		<div class="item3">
+			<p class="titletext"><a href="{% url 'vaccine_list2' %}"><img class="leftarrow" src="{% static 'img/arrowleft.webp' %}" alt="back"/></a>CoronaVac</p>
+			
+			<div class="firstbox">
+
+				<b class="title">How efficacious is the vaccine?</b>
+				<p> Trial in Brazil showed that two doses with interval of 14 days has efficacy of 51% against symptomatic SARS-CoV-2 infection, 100% against severe COVID-19, and 100% against hospitalization.</p>
+				<b class="title">What is the recommended dosage?</b>
+				<p> Sinovac-CoronaVac vaccine has 2 doses (0.5 ml) given intramuscularly. WHO recommends an interval of 2–4 weeks between the first and second dose. It is recommended that all vaccinated individuals receive two doses.</p>
+				<hr>
+				<p>Individuals with a history of anaphylaxis to any component of the vaccine should not take it. Persons with acute PCR-confirmed COVID-19 should not be vaccinated. Anyone with a body temperature over 38.5°C should postpone vaccination until they no longer have a fever.</p>
+
+			<div class="secondbox">
+				<a class="boxtext" href="{% url 'reach_us' %}"> Questions? Reach us out! </a>
+				<a class="boxtext" href="{% url 'frequently_asked_questions' %}"> Check out our FAQs! </a>
+				<a class="boxtext" href="{% url 'registedperson' %}"> Vaccine Registration </a>
+			</div>
+			</div>
+		</div>
+{%endblock%}

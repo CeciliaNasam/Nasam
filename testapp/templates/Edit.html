@@ -1,0 +1,106 @@
+{%extends 'navg.html' %}
+{%load static%}
+{%block content%}
+<link rel="stylesheet" href="{% static 'css/styling.css' %}">
+<form name="editform" id="editform" method="POST">
+
+<!-- <form name="myForm" method="POST" action="/flsys/edit/update/{{ cuiReg.id }}"> -->
+<form method="POST" action="/edit/update/{{ userInfo.id }}">
+{% csrf_token %}
+	<div class="item3f">
+		<div class="item3_2f">
+			<fieldset style="border-radius: 6px;">
+				<legend class="formtext">Vaccine Database Registration</legend>
+			    <fieldset>
+						<legend>Vaccine Information</legend>
+						<label class="item3_2f">Sequence: </label>
+						<select name="dsequence" class="item3_22" required>
+				            <option value ="choice0"></option>
+				            <option value ="First Dose only">First Dose only</option>
+				            <option value ="First & Second dose">First & Second dose</option>
+				            <option value ="with booster">With booster</option>
+			        	</select>
+			        	<label class="item3_2f">Date of last vaccine:</label>
+  						<input class="item3_22f" type="date" name="dolv" placeholder="mm-dd-yyyy" required>
+  						<br><br>
+						<label class="item3_2f">Vaccine Brand(1st Dose): </label>
+                        <select name="brand1" class="item3_22" required>
+                        	<option value =""></option>
+                            <option value ="none">Not Applicable</option>
+                            <option value ="Pfizer">Pfizer</option>
+                            <option value ="Moderna">Moderna</option>
+                            <option value ="Sputnik V">Sputnik V</option>
+                            <option value ="Janssen">Janssen</option>
+                            <option value ="AztraZeneca">AztraZeneca</option>
+                            <option value ="Covaxin">Covaxin</option>
+                            <option value ="CoronavacSinopharm">CoronavacSinopharm</option>
+                            <option value ="Sinopharm">Sinopharm</option>
+                        </select>
+                        <label class="item3_2f">Vaccine Brand(2nd Dose): </label>
+                        <select name="brand2" class="item3_22" required>
+                        	<option value =""></option>
+                            <option value ="none">Not Applicable</option>
+                            <option value ="Pfizer">Pfizer</option>
+                            <option value ="Moderna">Moderna</option>
+                            <option value ="Sputnik V">Sputnik V</option>
+                            <option value ="Janssen">Janssen</option>
+                            <option value ="AztraZeneca">AztraZeneca</option>
+                            <option value ="Covaxin">Covaxin</option>
+                            <option value ="CoronavacSinopharm">CoronavacSinopharm</option>
+                            <option value ="Sinopharm">Sinopharm</option>
+                        </select>
+                        <br><br>
+                        <label class="item3_2f">Vaccine Brand(Booster): </label>
+                        <select name="brand3" class="item3_22" required>
+                        	<option value =""></option>
+                            <option value ="none">Not Applicable</option>
+                            <option value ="Pfizer">Pfizer</option>
+                            <option value ="Moderna">Moderna</option>
+                            <option value ="Sputnik V">Sputnik V</option>
+                            <option value ="Janssen">Janssen</option>
+                            <option value ="AztraZeneca">AztraZeneca</option>
+                            <option value ="Covaxin">Covaxin</option>
+                            <option value ="CoronavacSinopharm">CoronavacSinopharm</option>
+                            <option value ="Sinopharm">Sinopharm</option>
+                        </select>
+			        	<br><br>
+			        	<label class="item3_2f">Facility Name: </label>
+				<input class="item3_22f" type="text" name="fname" id="fname" placeholder="(Required)">
+				<label class="item3_2f">Address: </label>
+				<input class="item3_22f" type="text" name="fadd" id="fadd" placeholder="(Required)">
+					<br><br>
+				<label class="item3_2f">Facility Type: </label>
+                <select name="ftype" class="item3_22" required>
+                	<option value =""></option>
+                    <option value ="none">Not Applicable</option>
+                    <option value ="Health Office">Health Office</option>
+                    <option value ="School">School</option>
+                    <option value ="Drive-thru">Drive-thru</option>
+                    <option value ="Hospital">Hospital</option>
+                    <option value ="Mall">Mall</option>
+                </select>
+
+				<label class="item3_2f">Name: </label>
+				<input class="item3_22f" type="text" name="wname" id="wname" placeholder="(Required)">
+				<label class="item3_2f">License Number: </label>
+				<input class="item3_22f" type="text" name="wnum" id="wnum" placeholder="(Required)">
+					<br><br>
+				<label class="item3_2f">Health Worker Category: </label>
+                <select name="wtype" class="item3_22" required>
+                	<option value =""></option>
+                    <option value ="none">Not Applicable</option>
+                    <option value ="Volunteer">Volunteer</option>
+                    <option value ="Doctor">Doctor</option>
+                    <option value ="Nurse">Nurse</option>
+                    <option value ="Pediatrician">Pediatrician</option>
+                </select>
+			<br><br>
+                        <button type="submit" class="fakebutton">Submit</button>
+			        	<button type="reset" class="button" onclick="repeat()">Clear</button>
+					</fieldset>
+			</fieldset>
+
+				
+		</div>
+	</div>
+{%endblock%}

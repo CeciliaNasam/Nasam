@@ -1,0 +1,23 @@
+{%extends 'vaxx2.html' %}
+{%load static%}
+{%block content%}
+		<div class="item3">
+			<p class="titletext"><a href="{% url 'vaccine_list2' %}"><img class="leftarrow" src="{% static 'img/arrowleft.webp' %}" alt="back"/></a>Covaxin</p>
+			
+			<div class="firstbox">
+
+				<b class="title">How efficacious is the vaccine?</b>
+				<p> Vaccine efficacy against severe disease is 93%. In adults aged less than 60 years, efficacy was 79%; and in those aged 60 years and over it was 68%.</p>
+				<b class="title">What is the recommended dosage?</b>
+				<p> BBV152 vaccine has 2 doses (0.5 ml) given intramuscularly. The vaccine can be administered with an interval of 4 weeks. It is recommended that all vaccinated individuals receive two doses.</p>
+				<hr>
+				<p>Safety and immunogenicity data for under-18s are currently being generated. Vaccination of individuals in this age group is not recommended. Vaccination is recommended for people living with conditions that have been identified as increasing the risk of severe COVID-19, including cardiovascular disease, respiratory disease, diabetes, liver disease and obesity.</p>
+
+			<div class="secondbox">
+				<a class="boxtext" href="{% url 'reach_us' %}"> Questions? Reach us out! </a>
+				<a class="boxtext" href="{% url 'frequently_asked_questions' %}"> Check out our FAQs! </a>
+				<a class="boxtext" href="{% url 'registedperson' %}"> Vaccine Registration </a>
+			</div>
+			</div>
+		</div>
+{%endblock%}

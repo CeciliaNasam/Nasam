@@ -1,0 +1,59 @@
+{%extends 'navg.html' %}
+{%load static%}
+{%block content%}
+<link rel="stylesheet" href="{% static 'css/styling.css' %}">
+<form name="myForm" id="suggest" method="POST">
+	{% csrf_token %}
+	<div class="item3f">
+		<div class="item3_2f">
+			<fieldset style="border-radius: 6px;">
+				<legend class="formtext">Vaccine Database Registration</legend>
+				<fieldset>
+					<label class="item3_2f">Surname: </label>
+					<input class="item3_22f" type="text" name="surname" id="surname" placeholder="(Required)" required>
+					<label class="item3_2f">First Name: </label>
+					<input class="item3_22f" type="text" name="firstname" id="firstname" placeholder="(Required)">
+					<label class="item3_2f">Middle Name: </label>
+					<input class="item3_22f" type="text" name="middlename" id="middlename" placeholder="(Required)">
+					<br><br>
+					<label class="item3_2f">Gender: </label>
+					<select name="gender" class="item3_22" id="gender" required>
+						<option value ="choice0"></option>
+						<option value ="Female">Female</option>
+						<option value ="Male.">Male</option>
+					</select>
+					<label class="item3_2f">Date of Birth:</label>
+					<input class="item3_22f" type="date" name="dob" id="dob" placeholder="mm-dd-yyyy" required>
+					<label class="item3_2f">Vaccinnee Category: </label>
+					<select name="vcat" class="item3_22" id="vcat" required>
+						<option value ="choice0"></option>
+			            <option value ="A1">A1</option>
+			            <option value ="A2">A2</option>
+			            <option value ="A3">A3</option>
+			            <option value ="A4">A4</option>
+			            <option value ="A5">A5</option>
+			            <option value ="B1">B1</option>
+			            <option value ="B2">B2</option>
+			            <option value ="B3">B3</option>
+			            <option value ="B4">B4</option>
+			            <option value ="B5">B5</option>
+			            <option value ="B6">B6</option>
+			            <option value ="C">C</option>
+			        </select>
+			        <br><br>
+
+			        <!-- <label class="item3_2f">Age:</label>
+			        <input class="item3_22f" type="text" name="age" id="age" placeholder="(Required)" required/> -->
+			        <label class="item3_2f">E-mail: </label>
+			        <input class="item3_22f" type="email" name="email" id="email" placeholder="juan@gmail.com" required>
+			        <label class="item3_2f">Mobile Number:</label>
+			        <input class="item3_22f" type="tel" name="phone" id="phone" pattern="[0-9]{11}" placeholder="(Required)" required/>
+			        <br><br>
+			        
+			        <button type="submit" class="fakebutton" >Submit</button>
+			        <button type="reset" class="button" onclick="repeat()">Clear</button>
+			    </fieldset>
+			</fieldset>
+		</div>
+	</div>
+{%endblock%}

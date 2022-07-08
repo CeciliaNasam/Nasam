@@ -1,0 +1,24 @@
+{%extends 'vaxx.html' %}
+{%load static%}
+{%block content%}
+<div class="item3">
+	<p class="titletext"><a href="{% url 'vaccine_list1' %}"><img class="leftarrow" src="{% static 'img/arrowleft.webp' %}" alt="back"/></a>Moderna</p>
+	
+	<div class="firstbox">
+		<b class="title">How efficacious is the vaccine?</b>
+		<p> The Moderna vaccine has been shown to have an efficacy of approximately 94.1 per cent in protecting against COVID-19, starting 14 days after the first dose.</p>
+		<b class="title">What is the recommended dosage?</b>
+		<p> Moderna mRNA-1273 vaccine at a schedule of two doses 28 days apart. If necessary, the interval may be extended to 42 days.</p>
+
+		<hr>
+		<p>On 30 April, WHO listed the Moderna vaccine for emergency use. It is safe with comorbidities such as; chronic lung disease, significant cardiac disease, severe obesity, diabetes, liver disease and human immunodeficiency virus (HIV) infection. Individuals with a history of severe allergic reaction to any component of the vaccine should not take this or any other mRNA vaccine.</p>
+
+		<div class="secondbox">
+			
+			<a class="boxtext" href="{% url 'reach_us' %}"> Questions? Reach us out! </a>
+			<a class="boxtext" href="{% url 'frequently_asked_questions' %}"> Check out our FAQs! </a>
+			<a class="boxtext" href="{% url 'registedperson' %}"> Vaccine Registration </a>
+		</div>
+	</div>
+</div>
+{%endblock%}

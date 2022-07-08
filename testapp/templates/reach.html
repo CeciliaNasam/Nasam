@@ -1,0 +1,53 @@
+{%extends 'navg.html' %}
+{%load static%}
+{%block content%}
+<form name="reachform" action = "#" method = "post" enctype="multipart/form-data" onsubmit="sendEmail(name.value,email.value,mail_type.value,message_txt.value)" >
+	{% csrf_token %} 
+	<div class="item3f">
+		<div class="item3_2f">
+			<fieldset style="border-radius: 6px;">
+				<legend class="formtext">Reach Us! </legend>
+				<fieldset>
+					<legend>Personal Information</legend>
+					<label class="item3_2f">Title: </label>
+					<select name="title" class="item3_22" required>
+						<option value ="choice0"></option>
+						<option value ="Ms.">Ms.</option>
+						<option value ="Mrs.">Mrs.</option>
+						<option value="Mr.">Mr.</option>
+					</select>
+					<label class="item3_2f">Surname: </label>
+					<input class="item3_22f" type="text" name="surname" id="name" placeholder="(Required)" required>
+					<label class="item3_2f">First Name: </label>
+					<input class="item3_22f" type="text" name="first_name" placeholder="(Optional)">
+					<br><br>
+					<label class="item3_2f">E-mail: </label>
+					<input class="item3_22f" type="email" name="email" placeholder="juan@gmail.com" required>
+					<label class="item3_2f">Mobile Number:</label>
+					<input class="item3_22f" type="tel" name="phone" pattern="[0-9]{11}" placeholder="(Required)" required/>
+				</fieldset>
+				<br>
+
+				<fieldset style="border-radius: 6px;">
+					<legend class="formtext">What can we help you with?</legend>
+					<input type="radio" name="mail_type" id="mail_type" value="Complaint" id="Complaint" required />
+					<label for="mail_type" class="item3_2f" >Complaint</label>
+					<input type="radio" name="mail_type" value="Feedback" id="Feedback" required/>
+					<label for="mail_type" class="item3_2f" >Feedback</label>
+
+					<input type="radio" name="mail_type" value="Question" id="Question" required/>
+					<label for="mail_type" class="item3_2f" >Question</label>
+
+					<input type="radio" name="mail_type" value="Report" id="Report" required/>
+					<label for="mail_type" class="item3_2f" >Report a Problem</label>
+
+					<br><br>
+					<textarea class="messagebox" name="message_txt" id="message_txt" placeholder="Type message here" required></textarea>
+					<br>
+					<button type="submit" class="button" onclick="send()">Send</button>
+					<button type="reset" class="button" onclick="repeat()">Clear</button>
+				</fieldset>
+			</fieldset>
+		</div>
+	</div>
+{%endblock%}

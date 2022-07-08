@@ -1,0 +1,73 @@
+{%extends 'navg.html' %}
+{%load static%}
+{%block content%}
+<form name="myForm" id="suggest" method="POST">
+    {% csrf_token %}
+		<div class="item3f">
+			<div class="item3_2f">
+				<fieldset style="border-radius: 6px;">
+					<legend class="formtext">Vaccine Database Registration</legend>
+					<fieldset>
+						<legend>Vaccine Information</legend>
+						<label class="item3_2f">Sequence: </label>
+						<select name="dsequence" class="item3_22" required>
+				            <option value ="choice0"></option>
+				            <option value ="First Dose only">First Dose only</option>
+				            <option value ="First & Second dose">First & Second dose</option>
+				            <option value ="with booster">With booster</option>
+			        	</select>
+			        	<label class="item3_2f">Date of last vaccine:</label>
+  						<input class="item3_22f" type="date" name="dolv" placeholder="mm-dd-yyyy" required>
+  						<br><br>
+
+						<label class="item3_2f">Vaccine Brand(1st Dose): </label>
+                        <select name="brand1" class="item3_22" required>
+                        	<option value =""></option>
+                            <option value ="none">Not Applicable</option>
+                            <option value ="Pfizer">Pfizer</option>
+                            <option value ="Moderna">Moderna</option>
+                            <option value ="Sputnik V">Sputnik V</option>
+                            <option value ="Janssen">Janssen</option>
+                            <option value ="AztraZeneca">AztraZeneca</option>
+                            <option value ="Covaxin">Covaxin</option>
+                            <option value ="CoronavacSinopharm">CoronavacSinopharm</option>
+                            <option value ="Sinopharm">Sinopharm</option>
+                        </select>
+                        <br><br>
+                        <label class="item3_2f">Vaccine Brand(2nd Dose): </label>
+                        <select name="brand2" class="item3_22" required>
+                        	<option value =""></option>
+                            <option value ="none">Not Applicable</option>
+                            <option value ="Pfizer">Pfizer</option>
+                            <option value ="Moderna">Moderna</option>
+                            <option value ="Sputnik V">Sputnik V</option>
+                            <option value ="Janssen">Janssen</option>
+                            <option value ="AztraZeneca">AztraZeneca</option>
+                            <option value ="Covaxin">Covaxin</option>
+                            <option value ="CoronavacSinopharm">CoronavacSinopharm</option>
+                            <option value ="Sinopharm">Sinopharm</option>
+                        </select>
+                        <br><br>
+                        <label class="item3_2f">Vaccine Brand(Booster): </label>
+                        <select name="brand3" class="item3_22" required>
+                        	<option value =""></option>
+                            <option value ="none">Not Applicable</option>
+                            <option value ="Pfizer">Pfizer</option>
+                            <option value ="Moderna">Moderna</option>
+                            <option value ="Sputnik V">Sputnik V</option>
+                            <option value ="Janssen">Janssen</option>
+                            <option value ="AztraZeneca">AztraZeneca</option>
+                            <option value ="Covaxin">Covaxin</option>
+                            <option value ="CoronavacSinopharm">CoronavacSinopharm</option>
+                            <option value ="Sinopharm">Sinopharm</option>
+                        </select>
+			        	<br><br>
+			
+                        <button type="submit" class="fakebutton">Submit</button>
+			        	<button type="reset" class="button" onclick="repeat()">Clear</button>
+					</fieldset>
+				</fieldset>
+			</div>
+		</div>
+	</form>
+{%endblock%}

@@ -1,0 +1,19 @@
+{%extends 'vaccinelist.html' %}
+{%load static%}
+{%block content%}
+
+<div class="s1imgdiv">
+	<a href="{% url 'pfizer' %}"><img class="imgformat" src="{% static 'img/v1.webp' %}" alt="Pfizer Vaccine Imange"/></a>
+	<a href="{% url 'moderna' %}"><img class="imgformat" src="{% static 'img/v2.webp' %}" alt="Moderna Vaccine Imange"/></a>
+	<a href="{% url 'sputnik' %}"><img class="imgformat" src="{% static 'img/v3.webp' %}" alt="Sputnik Vaccine Imange"/></a>
+	<a href="{% url 'janssen' %}"><img class="imgformat" src="{% static 'img/v5.webp' %}" alt="Janssen Vaccine Imange"/></a>
+	<a href="{% url 'vaccine_list2' %}"><img class="s1rightarrow" src="{% static 'img/arrowright.webp' %}" alt="next"/></a>
+</div>
+
+<div class="captiondiv">
+	<b class="s1imgtext"> Pfizer </b>
+	<b class="s1imgtext1"> Moderna </b>
+	<b class="s1imgtext2"> Sputnik V </b>
+	<b class="s1imgtext"> Janssen</b>
+</div>
+{%endblock%}

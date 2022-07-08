@@ -1,0 +1,50 @@
+{%extends 'navg.html' %}
+{%load static%}
+{%block content%}
+<form name="myForm" id="suggest" method="POST">
+	{% csrf_token %}
+<div class="item3f">
+	<div class="item3_2f">
+		<fieldset style="border-radius: 6px;">
+			<legend class="formtext">Vaccine Database Registration</legend>
+			<fieldset>
+				<legend>Facility Information</legend>
+				<label class="item3_2f">Facility Name: </label>
+				<input class="item3_22f" type="text" name="fname" id="fname" placeholder="(Required)">
+				<label class="item3_2f">Address: </label>
+				<input class="item3_22f" type="text" name="fadd" id="fadd" placeholder="(Required)">
+					<br><br>
+				<label class="item3_2f">Facility Type: </label>
+                <select name="ftype" class="item3_22" required>
+                	<option value =""></option>
+                    <option value ="none">Not Applicable</option>
+                    <option value ="Health Office">Health Office</option>
+                    <option value ="School">School</option>
+                    <option value ="Drive-thru">Drive-thru</option>
+                    <option value ="Hospital">Hospital</option>
+                    <option value ="Mall">Mall</option>
+                </select>
+            </fieldset>
+            <fieldset>
+				<legend>Health Worker Information</legend>
+				<label class="item3_2f">Name: </label>
+				<input class="item3_22f" type="text" name="wname" id="wname" placeholder="(Required)">
+				<label class="item3_2f">License Number: </label>
+				<input class="item3_22f" type="text" name="wnum" id="wnum" placeholder="(Required)">
+					<br><br>
+				<label class="item3_2f">Health Worker Category: </label>
+                <select name="wtype" class="item3_22" required>
+                	<option value =""></option>
+                    <option value ="none">Not Applicable</option>
+                    <option value ="Volunteer">Volunteer</option>
+                    <option value ="Doctor">Doctor</option>
+                    <option value ="Nurse">Nurse</option>
+                    <option value ="Pediatrician">Pediatrician</option>
+                </select>
+            </fieldset>
+            <input class="fakebutton" name="Submit" value="Submit" type="Submit"/>
+            <button type="reset" class="button" onclick="repeat()">Clear</button>
+		</fieldset>
+	</div>
+</div>
+{%endblock%}

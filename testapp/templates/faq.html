@@ -1,0 +1,50 @@
+{%extends 'navg.html' %}
+{%load static%}
+{%block content%}
+<div class="item4a">
+	<fieldset style="border-radius: 6px;">
+		<legend class="formtext2">Frequently Asked Questions:</legend>
+		<hr class="hr-line">
+		<div class="question">When should i get vaccinated?</div> 
+		<div class="answer">
+			<p class="answer1"> Vaccines protect us throughout life and at different ages, from birth to childhood, as teenagers and into old age. In most countries you will be given a vaccination card that tells you what vaccines you or your child have had and when the next vaccines or booster doses are due. It is important to make sure that all these vaccines are up to date.</p>
+		</div>
+		<hr class="hr-line">
+		<div class="question">Who can get vaccinated?</div>
+		<div class="answer">
+			<p class="answer1" >Nearly everyone can get vaccinated. However, because of some medical conditions, some people should not get certain vaccines, or should wait before getting them.5</p>
+		</div>
+
+		<hr class="hr-line">
+		<div class="question">Are vaccines safe?</div>
+
+		<div class="answer">
+			<p class="answer1">Vaccination is safe and side effects from a vaccine are usually minor and temporary, such as a sore arm or mild fever. More serious side effects are possible, but extremely rare.Any licensed vaccine is rigorously tested across multiple phases of trials before it is approved for use, and regularly reassessed once it is introduced. Scientists are also constantly monitoring information from several sources for any sign that a vaccine may cause health risks.</p>
+		</div>
+
+		<hr class="hr-line">
+		<div class="question">Are there side effect in getting vaccines?</div> 
+		<div class="answer">
+			<p class="answer1">Like any medicine, vaccines can cause mild side effects, such as a low-grade fever, or pain or redness at the injection site. Mild reactions go away within a few days on their own. Severe or long-lasting side effects are extremely rare. Vaccines are continually monitored for safety, to detect rare adverse events.</a></p>
+		</div>
+	</fieldset>
+
+</div>
+<script>
+	var acc = document.getElementsByClassName("question");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function(){
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+				panel.style.display = "none";
+			} 
+			else {
+				panel.style.display = "block";
+			}
+		});
+	}
+</script>
+{%endblock%}

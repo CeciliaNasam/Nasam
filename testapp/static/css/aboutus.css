@@ -1,0 +1,84 @@
+.lastbody{
+	background-image: url(/static/img/about.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	grid-template-areas:
+	'navi navi navi navi navi navi'
+	'box1 box1 box1 vid vid vid';
+}
+@font-face{
+	font-family:'montserrat';
+	src: url('/static/font/Montserrat-Medium.otf');
+}
+@font-face{
+	font-family:'fjalla';
+	src: url('/static/font/FjallaOne-Regular.ttf');
+}
+@font-face{
+	font-family:'montserratbold';
+	src: url('/static/font/Montserrat-Bold.otf');
+}
+@font-face{
+	font-family:'arvo';
+	src: url('/static/font/Arvo-Regular.ttf');
+}
+.upcont{
+	grid-area: navi ;
+	background-color: #ffffff;
+	padding:0px ;
+}
+.item1 { 
+	width: 350px;
+	alt: "The Health Wiz Logo";
+}
+.item2 { 
+	float: right;
+	display: inline-block;
+	padding-top: 50px;
+	padding-right: 20px;
+	font-family: montserrat; 
+	color: #000000;
+	text-decoration: none; 
+}
+.item3 { 
+	grid-area: box1;
+	float: left;
+	display: inline-block;
+	padding-top: 50px;
+	padding-left: 50px;
+	width: 600px;
+	height: 100px;
+	font-family: fjalla;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-indent: 50px;
+	text-align: left; 
+}
+.item4 { 
+	grid-area: vid;
+	float: right;
+	padding-top: 30px;
+	padding-right: 10px;
+}
+.item2:hover{
+	color: gray;
+}
+.secondbox{
+	padding-top: 10px;
+	width: 650px;
+	height: 80px;
+	text-align: left;
+	text-indent: 0px;	
+}
+.boxtext{
+	font-family: montserrat;
+	font-size: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+	padding: 2px;
+	margin-right: 10px;
+}
+{% endblock %}

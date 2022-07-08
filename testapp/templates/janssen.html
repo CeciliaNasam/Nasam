@@ -1,0 +1,23 @@
+{%extends 'vaxx.html'%}
+{%load static%}
+{%block content%}
+<div class="item3">
+	<p class="titletext"><a href="{% url 'vaccine_list1' %}"><img class="leftarrow" src="{% static 'img/arrowleft.webp' %}" alt="back"/></a>Janssen</p>
+
+	<div class="firstbox">
+		<b class="title">How efficacious is the vaccine?</b>
+		<p> 28 days after inoculation the efficacy is 85.4% against severe disease and 93.1 % against hospitalization. Single dose is found in clinical trials to have an efficacy of 66.9% against symptomatic moderate and severe SARS-CoV-2 infection.</p>
+		<b class="title">What is the recommended dosage?</b>
+		<p> Janssen Ad26.CoV2.S is one dose (0.5 ml) given intramuscularly. Minimum interval of 14 days between the administration of any other vaccine.</p>
+		<hr>
+		<p>The vaccine is safe and effective in people with known medical conditions associated with increased risk of severe disease, such as hypertension, chronic lung disease, significant cardiac disease, obesity, diabetes, and HIV infection or even people who had COVID-19 in the past. </p>
+
+		<div class="secondbox">
+			
+			<a class="boxtext" href="{% url 'reach_us' %}"> Questions? Reach us out! </a>
+			<a class="boxtext" href="{% url 'frequently_asked_questions' %}"> Check out our FAQs! </a>
+			<a class="boxtext" href="{% url 'registedperson' %}"> Vaccine Registration </a>
+		</div>
+	</div>
+</div>
+{%endblock%}

@@ -1,0 +1,19 @@
+{%extends 'vaccinelist.html' %}
+{%load static%}
+{%block content%}
+<div class="s2imgdiv">
+	<a href="{% url 'vaccine_list1' %}"><img class="s2leftarrow" src="{% static 'img/arrowleft.webp' %}" alt="previous"/></a>
+	<a href="{% url 'astra' %}"><img class="imgformat" src="{% static 'img/v6.webp' %}" alt="AstraZenica Vaccine Imange"/></a>
+	<a href="{% url 'covaxin' %}"><img class="imgformat" src="{% static 'img/v7.webp' %}" alt="Covaxin Vaccine Imange"/></a>
+	<a href="{% url 'coronavac' %}"><img class="imgformat" src="{% static 'img/v8.webp' %}" alt="CoronaVac Vaccine Imange"/></a>
+	<a href="{% url 'sinopharm' %}"><img class="imgformat" src="{% static 'img/v9.webp' %}" alt="Sinopharm Vaccine Imange"/></a>
+</div>
+
+<div class="captiondiv" href="second.html">
+	<b class="s2imgtext"> AstraZeneca </b>
+	<b class="s2imgtext1"> Covaxin </b>
+	<b class="s2imgtext2"> CoronaVac </b>
+	<b class="s2imgtext"> Sinopharm </b>			
+</div>
+
+{%endblock%}
